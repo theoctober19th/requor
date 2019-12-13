@@ -1,0 +1,2 @@
+This is the checklist to be followed before deploying any application to the server.
+
