@@ -34,7 +34,7 @@ def detail(request, id):
         'answers': answers
     }
 
-    return render(request, 'detail.html', d)
+    return render(request, 'qna_app/detail.html', d)
         
     # question = QuestionModel.objects.get(id=id)
 

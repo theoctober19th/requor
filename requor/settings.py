@@ -26,7 +26,8 @@ SECRET_KEY = 'n*g3s1p@z9p=9gx1_q+%vu!#f*ly75y@(^&p9*(9imp3ltzz$!'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'fierce-dawn-28605.herokuapp.com'
+    'fierce-dawn-28605.herokuapp.com',
+    'localhost'
 ]
 
 
