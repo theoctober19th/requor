@@ -25,7 +25,9 @@ SECRET_KEY = 'n*g3s1p@z9p=9gx1_q+%vu!#f*ly75y@(^&p9*(9imp3ltzz$!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'fierce-dawn-28605.herokuapp.com'
+]
 
 
 # Application definition
