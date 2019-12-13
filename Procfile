@@ -1,1 +1,1 @@
-web: gunicorn requor.wsgi --log-file -
+web: gunicorn requor.wsgi
