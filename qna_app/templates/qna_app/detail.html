@@ -1,0 +1,35 @@
+{%extends 'qna_app/base.html'%}
+
+{% block title %}
+    {{question.title}}
+{%endblock%}
+
+{%block main_body%}
+    <div class="card">
+        <div class="card-body">
+          <h5>{{question.title}}</h5>
+          Votes: {{question.votes}} <br>
+          Asked By: Bikalpa
+        </div>
+      </div>
+      <br>
+
+    <form method="POST">
+        <div class="form-group">
+            <label for="answer">Your answer</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='answer'></textarea>
+        </div>
+    </form>
+
+      <h2>Answers:</h2>
+
+        {%for answer in answers%}
+            <div class="card">
+                <div class="card-body">
+                    {{answer.description}}
+                    Votes: {{answer.votes}} <br>
+                    Answered By: Bikalpa
+                </div>
+            </div>
+        {%endfor%}
+{%endblock%}

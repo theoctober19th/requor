@@ -1,0 +1,11 @@
+{%extends 'qna_app/base.html'%}
+
+{%block main_body%}
+    {%for question in questions%}
+        <div class="card">
+            <div class="card-body">
+                ({{question.votes}}) <a href="{%url 'qna.detail' question.id%}"><h6>{{question.title}}</h6></a>
+            </div>
+        </div>
+    {%endfor%}
+{%endblock%}
