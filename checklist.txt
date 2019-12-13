@@ -1,2 +1,27 @@
-This is the checklist to be followed before deploying any application to the server.
+Heroku Checklist
+
+1. Create a .gitignore file, and commit changes to the local git repository.
+2. Install Heroku CLI for your machine.
+3. Create a Heroku account.
+4. heroku login
+5. heroku create
+6. Add Heroku to ALLOWED_HOSTS.
+7. Create Procfile with web: gunicorn project_name.wsgi
+8. pip install gunicorn
+9. pip freeze -l > requirements.txt
+10. Create runtime.txt file with python-3.8.0
+11. Define STATIC_ROOT in settings.py
+12. python manage.py collectstatic
+13. pip install dj_database_url
+14. Change the database to Postgresql (In settings.py, default to: dj_database_url.config() )
+15. Add psycopg2 to requirements.txt
+16. Commit all changes.
+17. git push heroku master
+18. heroku run python manage.py makemigrations
+19. heroku run python manage.py migrate
+20. heroku ps:scale web=1
+21. heroku open
+22. set DEBUG = False in settings.py
+23. Commit, and push to heroku.
+
 
